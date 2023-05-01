@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Hacker News Reply Guidelines",
+  "version": "1.0",
+  "description": "Inserts a link next to 'reply' links that directs to the guidelines for commenting.",
+  "content_scripts": [
+    {
+      "matches": ["https://news.ycombinator.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
